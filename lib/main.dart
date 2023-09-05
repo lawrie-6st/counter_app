@@ -22,8 +22,9 @@ class MyApp extends StatelessWidget {
 @riverpod
 class Counter extends _$Counter {
   @override
+  // ここでは、ビルドさせた時の数値をイニシャライズしてる。
   int build() => 0;
-
+  // 最初に0が格納された、stateを呼び出して、stateをインクリメントさせる。
   void increment() => state++;
 }
 
